@@ -229,6 +229,7 @@ metadata:
 data:
   # use-proxy-protocol: "true" # NOTICE: custom change for Velocidi
   use-proxy-protocol: "false" # NOTICE: custom change for Velocidi
+  proxy-buffer-size: "8k" # NOTICE: custom change for Velocidi, to avoid 502 with large headers on response from some keycloak requests
 
 ---
 
