@@ -10,6 +10,7 @@ metadata:
   labels:
     app.kubernetes.io/name: $RELEASE_NAME
     app.kubernetes.io/instance: $RELEASE_NAME
+    k8s-addon: ingress-nginx.addons.k8s.io
 "
 
 SETTINGS="
