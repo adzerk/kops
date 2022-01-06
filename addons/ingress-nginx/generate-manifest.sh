@@ -30,6 +30,7 @@ controller:
     enabled: false
   config:
     enable-real-ip: true
+    use-forwarded-headers: true
 "
 
 echo "Adding ingress-nginx to chart repositories"
