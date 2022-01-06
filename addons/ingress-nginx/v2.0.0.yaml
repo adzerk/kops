@@ -6,6 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/instance: ingress-nginx
+    k8s-addon: ingress-nginx.addons.k8s.io
 
 ---
 # Source: ingress-nginx/templates/controller-serviceaccount.yaml
