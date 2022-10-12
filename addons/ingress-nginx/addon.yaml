@@ -14,8 +14,9 @@ spec:
     manifest: v1.6.0.yaml
     kubernetesVersion: "<1.21.0"
     # Generated using the official helm chart: ./generate-manifest
-  - version: 2.0.0
+  - version: 2.0.1
     selector:
       k8s-addon: ingress-nginx.addons.k8s.io
-    manifest: v2.0.0.yaml
+    manifest: v2.0.1.yaml
+    manifestHash: a043108065680468fd9e9da2c371c2a4a6904dbf42f532a9a7bd083286822cee
     kubernetesVersion: ">=1.21.0"
