@@ -31,13 +31,14 @@ controller:
   config:
     enable-real-ip: true
     use-forwarded-headers: true
+    large-client-header-buffers: 4 16k
 "
 
 echo "Adding ingress-nginx to chart repositories"
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 echo "Generating manifest"
-OUTPUT_FILE="${DIR}/v2.0.0.yaml"
+OUTPUT_FILE="${DIR}/v2.0.1.yaml"
 echo "$NAMESPACE_VAR" > "$OUTPUT_FILE"
 echo "$SETTINGS" | helm template $RELEASE_NAME ingress-nginx/ingress-nginx --namespace $NAMESPACE --values - | grep -v -i "helm" | tee -a "$OUTPUT_FILE"
 
